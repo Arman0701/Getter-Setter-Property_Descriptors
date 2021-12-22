@@ -4,7 +4,6 @@ function getBestStudent(obj){
     let max = 0;
     let k = 0;
     for (let score of Object.values(obj)){
-        console.log(score)
         let avgScore = score.reduce(( a,b )=>{ return a+b })/score.length;
         if (max<avgScore){
             if (max === 0) k = k;
